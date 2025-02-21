@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 01c2989015bf8aa5ab00d9740c9bbed8f844421b Ubuntu <ubuntu@charm-dev.(none)> 1739707740 +0100	clone: from https://github.com/canonical/dashboard.git
+01c2989015bf8aa5ab00d9740c9bbed8f844421b 0068f42d4beadc703a8c93532c7c0b5aaba6a1f6 Ubuntu <ubuntu@charm-dev.(none)> 1739805820 +0100	pull: Fast-forward
+0068f42d4beadc703a8c93532c7c0b5aaba6a1f6 9d69ed4fd7bcebd96645876f62f4cd10c9bdd34a Daniele Procida <daniele@vurt.org> 1739810424 +0100	pull: Fast-forward
+9d69ed4fd7bcebd96645876f62f4cd10c9bdd34a add1bad66ac1ef4010bbd58af1383dffe520d985 Daniele Procida <daniele@vurt.org> 1739812693 +0100	merge origin/main: Fast-forward

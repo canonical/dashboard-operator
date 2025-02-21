@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 0068f42d4beadc703a8c93532c7c0b5aaba6a1f6 Ubuntu <ubuntu@charm-dev.(none)> 1739807353 +0100	branch: Created from HEAD
+0068f42d4beadc703a8c93532c7c0b5aaba6a1f6 6c65845ddb5f929b3b098a190a6b13ae35365482 Daniele Procida <daniele@vurt.org> 1739807454 +0100	commit: Added charmed version of settings
+6c65845ddb5f929b3b098a190a6b13ae35365482 b446f68b4b591586da2f81bc8ddddbedb5bc5db4 Daniele Procida <daniele@vurt.org> 1739808237 +0100	pull: Fast-forward
+b446f68b4b591586da2f81bc8ddddbedb5bc5db4 ebe79b7c3230147a812619689c8521f462073e62 Daniele Procida <daniele@vurt.org> 1739815224 +0100	commit: updated requirements
