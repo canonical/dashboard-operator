@@ -1,0 +1,6 @@
+.venv
+.git
+staticfiles
+*.rock
+*.charm
+
