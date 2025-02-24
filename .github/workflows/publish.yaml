@@ -11,6 +11,7 @@ jobs:
     name: Publish charm and rock
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
         arch: [amd64, arm64]
     runs-on: [self-hosted, linux, "${{ matrix.arch }}"]
@@ -50,11 +51,9 @@ jobs:
       - name: expand charmcraft.yaml
         working-directory: charm
         run: |
-          charmcraft expand-extensions > charmcraft.yaml.new
-          mv charmcraft.yaml.new charmcraft.yaml
+          charmcraft expand-extensions > ../charmcraft.yaml
       - name: update upstream-source
         shell: python
-        working-directory: charm
         run: |
           import yaml
           
@@ -63,7 +62,6 @@ jobs:
           resources[list(resources)[0]]["upstream-source"] = "localhost:5000/dashboard:latest"
           yaml.dump(charmcraft_yaml, open("charmcraft.yaml", "w"), sort_keys=False)
       - name: show charmcraft.yaml
-        working-directory: charm
         run: |
           cat charmcraft.yaml
       - if: github.event_name == 'push'
@@ -73,3 +71,4 @@ jobs:
           credentials: ${{ secrets.CHARMHUB_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           built-charm-path: ./charm/${{ steps.charmcraft.outputs.charms }}
+          tag-prefix: ${{ matrix.arch }}
