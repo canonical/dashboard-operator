@@ -30,6 +30,10 @@ requires:
     interface: postgresql_client
     optional: false
 
+actions:
+  load-sample-data:
+    description: Load the sample data that comes with the application.
+
 links:
   source:
   - https://github.com/canonical/dashboard/tree/charmed-version
